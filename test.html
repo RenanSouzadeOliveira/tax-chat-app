@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxInnovation - Chat Test</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .test-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .test-link {
+            display: block;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .test-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30, 60, 114, 0.3);
+        }
+        .info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #1e3c72;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TaxInnovation Chat - Página de Teste</h1>
+        
+        <div class="info">
+            <strong>Instruções:</strong><br>
+            Clique nos links abaixo para testar o chatbot com diferentes CNPJs.
+            O sistema irá extrair o CNPJ da URL e iniciar a conversa automaticamente.
+        </div>
+
+        <div class="test-links">
+            <a href="/chat?cnpj=11.222.333/0001-81" class="test-link">
+                Testar com CNPJ: 11.222.333/0001-81
+            </a>
+            
+            <a href="/chat?cnpj=12345678000195" class="test-link">
+                Testar com CNPJ: 12.345.678/0001-95
+            </a>
+            
+            <a href="/chat?cnpj=98.765.432/0001-10" class="test-link">
+                Testar com CNPJ: 98.765.432/0001-10
+            </a>
+
+            <a href="/chat" class="test-link">
+                Testar sem CNPJ (irá mostrar erro)
+            </a>
+        </div>
+
+        <div class="info">
+            <strong>Backend:</strong><br>
+            Certifique-se de que o backend Java Spring esteja rodando na porta 8081
+            com os endpoints definidos no api-docs.json.
+        </div>
+    </div>
+</body>
+</html>

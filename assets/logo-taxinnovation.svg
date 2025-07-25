@@ -1,0 +1,14 @@
+<!-- TaxInnovation Logo baseado na identidade visual -->
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" rx="8" fill="white"/>
+  <!-- T -->
+  <rect x="8" y="12" width="20" height="4" fill="#3a3a5c"/>
+  <rect x="16" y="16" width="4" height="20" fill="#3a3a5c"/>
+  <!-- A -->
+  <path d="M28 36L32 12L36 36H34L33.2 32H30.8L30 36H28ZM31.2 28H32.8L32 24L31.2 28Z" fill="#6ea3d4"/>
+  <!-- X -->
+  <path d="M40 12L44 18L48 12H52L46 22L52 36H48L44 26L40 36H36L42 22L36 12H40Z" fill="#3a3a5c"/>
+  <!-- Innovation text hint -->
+  <rect x="8" y="42" width="44" height="1.5" fill="#6ea3d4" opacity="0.6"/>
+  <rect x="8" y="45" width="35" height="1" fill="#6ea3d4" opacity="0.4"/>
+</svg>
